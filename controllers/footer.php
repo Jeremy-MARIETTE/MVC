@@ -2,7 +2,7 @@
 
 include('models/footer.php');
 
-$coords = ReadCoords();
+//$coords = ReadCoords();
 
 include('views/footer.php');
 

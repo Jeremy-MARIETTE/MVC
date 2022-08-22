@@ -29,19 +29,6 @@ if(!empty($_GET['page']) AND is_file('controllers/'.$_GET['page'].'.php')){ //is
 
 }
 
- // Part 1
- $filename = "statistiques.txt";
- $count = file_get_contents($filename);
- if ($count == null)
-	$count = 0;
- //echo $count;
-// Part 2
- $count++;
- $handle = fopen($filename, "w+");
- fwrite($handle, $count);
- fclose($handle);
-//var_dump($_GET['page']);
-
 ?>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel='stylesheet' type='text/css' href='css/style.php' />
